@@ -5,8 +5,12 @@ class matriks{
     public static final int BrsMax = 100;
     public static final int KolMin = 0;
     public static final int KolMax = 100;
-    
 
+    static int input(){
+        Scanner baca = new Scanner(System.in);
+        int x = baca.nextInt();
+        return x;
+    }
 
     //Atribut
     int NBrsEff, NKolEff;
@@ -33,7 +37,7 @@ class matriks{
         
         for(i=BrsMin;i<N;i++){
             for(j=KolMin;j<M;j++){
-                this.Mat[i][j] = i+j;
+                this.Mat[i][j] = input();
             }
         }
     }
